@@ -591,6 +591,7 @@ body {
     object-fit: cover; /* 画像を崩さずに枠内に綺麗に収める */
     border-radius: 12px; /* 優しい印象にする角丸 */
     box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* ほんのり柔らかい影 */
+    filter: brightness(1.05);
 }
 
 /* パソコン表示のときだけ改行させる設定 */
@@ -611,4 +612,11 @@ body {
     white-space: normal;      /* 💡 nowrap（絶対改行しない）を解除して、枠の限界で自動改行させる */
     word-break: break-all;    /* 💡 英語や数字が含まれても、枠の端で綺麗に折れ曲がるようにする */
     overflow-wrap: break-word; /* 💡 文字が枠を突き抜けるのを絶対に防ぐ */
+}
+
+/* スマホで料金表が潰れるのを防ぐ */
+@media (max-width: 600px) {
+    .price-table {
+        min-width: 500px; /* 💡 スマホ画面でも、表自体は500pxの幅をキープして横スクロールさせる */
+    }
 }
