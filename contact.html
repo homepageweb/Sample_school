@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>無料体験・資料請求 | ステップ個別指導塾</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ヘッダーエリア -->
+    <header class="main-header">
+        <div class="header-container">
+            <h1 class="logo-text"><a href="index.html" style="text-decoration: none; color: #1a4a75;">ステップ個別指導塾</a></h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html#about">当塾について</a></li>
+                    <li><a href="index.html#features">3つの特徴</a></li>
+                    <li><a href="index.html#course">コース・料金</a></li>
+                    <li><a href="faq.html">よくある質問</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a href="contact.html" class="btn-cta-small">無料体験に申し込む</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- フォームエリア -->
+    <section class="form-section" style="padding: 60px 0; background-color: #f9f9f9;">
+        <div class="container">
+            <h2 class="section-title">無料体験・資料請求</h2>
+            <p class="section-lead">体験授業のお申し込み、または詳しい資料の郵送をご希望の方は、<br>以下のフォームよりお気軽にお問い合わせください。</p>
+
+            <div class="form-container">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label>お問い合わせ内容 <span class="badge-required">必須</span></label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="type" checked> 無料体験授業の申し込み</label>
+                            <label><input type="radio" name="type"> 資料請求</label>
+                            <label><input type="radio" name="type"> その他のお問い合わせ</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="parent-name">保護者様のお名前 <span class="badge-required">必須</span></label>
+                        <input type="text" id="parent-name" placeholder="例：山田 太郎" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="child-name">お子様のお名前</label>
+                        <input type="text" id="child-name" placeholder="例：山田 太陽">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="grade">お子様の学年 <span class="badge-required">必須</span></label>
+                        <select id="grade" required>
+                            <option value="">選択してください</option>
+                            <option value="elem">小学生</option>
+                            <option value="jhs">中学生</option>
+                            <option value="hs">高校生</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tel">お電話番号 <span class="badge-required">必須</span></label>
+                        <input type="tel" id="tel" placeholder="例：090-0000-0000" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">メールアドレス <span class="badge-required">必須</span></label>
+                        <input type="email" id="email" placeholder="例：sample@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">ご質問・ご要望など</label>
+                        <textarea id="message" rows="5" placeholder="現在の勉強のお悩みや、体験授業のご希望日時などがあればご記入ください。"></textarea>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="btn-submit">この内容で送信する</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="main-footer">
+        <p>&copy; 2026 ステップ個別指導塾. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
