@@ -620,3 +620,67 @@ body {
         min-width: 500px; /* 💡 スマホ画面でも、表自体は500pxの幅をキープして横スクロールさせる */
     }
 }
+
+/* ==========================================
+   スマートフォン用のレスポンシブ対応 (768px以下)
+   ========================================== */
+@media (max-width: 768px) {
+    
+    /* 1. ヘッダーメニューのスマホ対応 */
+    .header-container {
+        flex-direction: column; /* ロゴとメニューを縦並びに */
+        gap: 15px;
+        padding: 15px 10px;
+    }
+    
+    .main-nav ul {
+        flex-direction: column; /* メニューのリンク同士も縦並びに */
+        align-items: center;
+        gap: 12px;
+    }
+    
+    .main-nav a {
+        font-size: 15px;
+        padding: 5px 0;
+    }
+
+    /* 2. メインビジュアル（ヒーローエリア）のスマホ対応 */
+    .hero-section .container {
+        flex-direction: column-reverse; /* スマホでは画像を上、文字を下に */
+        gap: 30px;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero-main-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .hero-lead h2 {
+        font-size: 24px; /* スマホで見やすい文字サイズに縮小 */
+        line-height: 1.4;
+    }
+
+    /* 3. 「私たちの想い」エリアのスマホ対応 */
+    .about-content {
+        padding: 20px 15px;
+    }
+    
+    .about-content h4 {
+        font-size: 20px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+
+    /* 4. 「3つの特徴」カードのスマホ対応 */
+    .features-grid {
+        flex-direction: column; /* 横並びから「縦並び」に切り替え */
+        gap: 40px; /* カード同士の上下の隙間 */
+    }
+
+    .feature-card {
+        width: 100% !important; /* カードが横幅いっぱいに広がるように指定 */
+        box-sizing: border-box;
+    }
+}
